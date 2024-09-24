@@ -17,6 +17,8 @@ function App() {
   const clickSoundRef = useRef(new Audio('/click.mp3'));
   const rollSoundRef = useRef(new Audio('/roll.mp3'));
   const ringSoundRef = useRef(new Audio('/ring.mp3'));
+  const shakeSoundRef = useRef(new Audio('/shake.mp3'));
+
 
   useEffect(() => {
     const allHeld = dice.every(die => die.isHeld);
@@ -83,6 +85,12 @@ function App() {
     audio.play();
   }
 
+  function playShakeSound() {
+    const audio = shakeSoundRef.current.cloneNode();
+    audio.currentTime = 0;
+    audio.play();
+  }
+
   const diceElements = dice.map(die => (
     <Die 
       value={die.value}
@@ -107,6 +115,7 @@ function App() {
   }
 
   function newGame() {
+    playShakeSound();
     setStartTime(new Date().getTime());
     setRollCount(0);
     setDice(allNewDice());
