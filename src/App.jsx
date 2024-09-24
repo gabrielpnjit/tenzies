@@ -7,6 +7,11 @@ import Stats from "./components/Stats.jsx"
 import Footer from "./components/Footer.jsx"
 // import Confetti from "react-confetti"
 import {nanoid} from "nanoid"
+import clickSound from "/click.mp3"
+import rollSound from "/roll.mp3"
+import ringSound from "/ring.mp3"
+import shakeSound from "/shake.mp3"
+
 
 function App() {  
   const [dice, setDice] = useState(allNewDice())
@@ -15,10 +20,10 @@ function App() {
   const [time, setTime] = useState(0.0)
   const [startTime, setStartTime] = useState(new Date().getTime());
 
-  const clickSoundRef = useRef(new Audio('/click.mp3'));
-  const rollSoundRef = useRef(new Audio('/roll.mp3'));
-  const ringSoundRef = useRef(new Audio('/ring.mp3'));
-  const shakeSoundRef = useRef(new Audio('/shake.mp3'));
+  const clickSoundRef = useRef(new Audio(clickSound));
+  const rollSoundRef = useRef(new Audio(rollSound));
+  const ringSoundRef = useRef(new Audio(ringSound));
+  const shakeSoundRef = useRef(new Audio(shakeSound));
 
 
   useEffect(() => {
