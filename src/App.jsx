@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Die from "./components/Die.jsx"
 import Stats from "./components/Stats.jsx"
+import Footer from "./components/Footer.jsx"
 // import Confetti from "react-confetti"
 import {nanoid} from "nanoid"
 
@@ -147,6 +148,7 @@ function App() {
           <Stats rollCount={rollCount} time={time}/>
         </div>
       </div>
+      <Footer />
     </main>
   )
 }

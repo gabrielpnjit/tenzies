@@ -1,0 +1,37 @@
+footer {
+    display: flex;
+    margin: 32px;
+    font-family: 'Courier New', monospace;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    color: white;
+}
+
+.footer-logo {
+    max-width: 16px;
+    max-height: 16px;
+    filter: brightness(0) invert(1);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.2s ease;
+}
+
+a:visitied {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color:aqua
+}
+
+.right-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
