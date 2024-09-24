@@ -1,0 +1,7 @@
+.stats-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 26px;
+    color: #2B283A;
+}

@@ -1,0 +1,122 @@
+.die-square {
+    background-color: #FFFFFF;
+    color: #2B283A;
+    width: 72px;
+    height: 72px;
+    padding: 8px;
+    border-radius: 8px;
+    font-family: Karla;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    transition: background-color 0.1s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.die-num {
+    font-size: 40px;
+}
+
+.die-held {
+    background-color: #BDB7B3;
+}
+
+.die-tenzies {
+    background-color: #59E391;
+}
+
+.dot {
+    min-height: 14px;
+    min-width: 14px;
+    background-color: #2B283A;
+    border-radius: 50%;
+    /* display: inline-block; */
+  }
+
+.one-face {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.two-face {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.two-face .dot:nth-of-type(2) {
+    align-self: flex-end;
+}
+
+.three-face {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.three-face .dot:nth-of-type(2) {
+    align-self: center;
+}
+
+.three-face .dot:nth-of-type(3) {
+    align-self: flex-end;
+}
+
+.four-face {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.six-face {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.five-face {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.five-face .row:nth-of-type(2) {
+    justify-content: center;
+}
+
+.one-face .dot{
+    background-color: #F64848;
+}
+
+.two-face .dot{
+    background-color: #F4964A;
+}
+
+.three-face .dot{
+    background-color: #E9D03B;
+}
+
+.four-face .dot{
+    background-color: #6DC849;
+}
+
+.five-face .dot{
+    background-color: #575AB1;
+}
+
+.six-face .dot{
+    background-color: #D753CC;
+}
